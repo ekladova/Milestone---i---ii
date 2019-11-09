@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
-  max-width: 900px;
+  width: 100%;
   min-width: 500px;
   margin: 0 auto;
 }
@@ -14,7 +14,6 @@ a {
   color: black;
   padding: 10px;
   border-radius: 5%;
-  background-color: white;
   transition: background 250ms ease-in;
 }
 
@@ -31,13 +30,21 @@ a:hover {
   width: 100%;
   height: 50px;
   min-width: 500px;
+  background-color: cadetblue;
+}
+
+.nav {
+  width: 40%;
+  float: right;
 }
 
 .nav-link {
-  display: inline;
+  display: ;
   font-size: 21px;
   padding: 40px;
   font-family: "Nunito Sans", sans-serif;
+  display: inline;
+  justify-content: center;
 }
 
 /*form*/
@@ -49,6 +56,8 @@ a:hover {
 .container {
   border: 1px black solid;
   padding: 20px;
+  width: 850px;
+  margin: 0 auto;
 }
 
 .general {
