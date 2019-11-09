@@ -6,16 +6,21 @@ body {
   font-size: 13px;
   max-width: 900px;
   min-width: 500px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
   color: black;
+  padding: 10px;
+  border-radius: 5%;
+  background-color: :white;
+  transition: background 250ms ease-in;
 }
 
 a:hover {
-  font-weight: bold;
+  background-color: #eeedec;
+  transition: background 250ms ease-out;
 }
 
 /*nav bar*/
