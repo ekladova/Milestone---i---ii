@@ -4,111 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Form Page</title>
-    <link rel="stylesheet" href="./styles.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link href="styles.css" rel="stylesheet"
+    <title>Homepage</title>
   </head>
-
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Features</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="form.html">Form</a></li>
           <li><a href="#">Directions</a></li>
         </ul>
       </nav>
     </header>
-
-    <div class="form1">
-      <form action=" " method=" ">
-        <!-- <h3>Personal Details</h3> -->
-
-        <section id="textarea">
-          <label for="type">Describe the problem:</label>
-          <br />
-          <textarea id="type" name="type" rows="14" cols="70"></textarea>
-          <br />
-        </section>
-
-        <section class="general">
-          <label for="name">*Full Name: </label>
-          <br />
-          <input type="text" name="name" id="name" required />
-          <br />
-
-          <label for="house">*House number: </label>
-          <br />
-          <input type="text" name="house" id="house" required />
-          <br />
-
-          <!-- <h3>Contact details:</h3> -->
-          <label for="phoneNumber">Phone: </label>
-          <br />
-          <input type="text" name="phoneNumber" id="phoneNumber" />
-          <br />
-
-          <label for="emAdress">Email: </label>
-          <br />
-          <input type="text" name="emAdress" id="emAdress" />
-          <br />
-
-          <label for="issue">*Choose the issue topic: </label>
-          <br />
-          <select name="issue" id="issue" required>
-            <option value="construstion">Construstion</option>
-            <option value="housing">Housing</option>
-            <option value="rubbish">Rubbish</option>
-            <option value="road">Road</option>
-            <option value="administration">Administration</option>
-            <option value="complaint">Complaint</option>
-          </select>
-        </section>
-        <br />
-
-        <section class="questions">
-          <span id="contact">How would you like to be contacted?</span>
-          <br />
-          <input type="checkbox" name="contact" id="phone" value="phone" />
-          <label class="checkLabel" for="phone">Phone</label>
-          <input type="checkbox" name="contact" id="mail" value="mail" />
-          <label class="checkLabel" for="mail">E-Mail</label>
-          <input
-            type="checkbox"
-            name="contact"
-            id="appointment"
-            value="appointment"
-          />
-          <label class="checkLabel" for="appointment">Appointment </label>
-          <br />
-          <br />
-
-          <label for="people"
-            >If you wish to speak to someone in particular, please select below:
-          </label>
-          <br />
-          <input type="radio" name="people" id="person1" value="person1" />
-          <label class="checkLabel" for="person1">Person 1</label>
-
-          <input type="radio" name="people" id="person2" value="person2" />
-          <label class="checkLabel" for="person2">Person 2</label>
-
-          <input type="radio" name="people" id="person3" value="person3" />
-          <label class="checkLabel" for="person3">Person 3</label>
-
-          <input type="radio" name="people" id="person4" value="person4" />
-          <label class="checkLabel" for="person4">Person 4</label>
-
-          <br />
-        </section>
-
-        <section class="submission">
-          <input type="submit" value="Submit" />
-        </section>
-      </form>
-    </div>
   </body>
 </html>
