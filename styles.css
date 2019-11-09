@@ -1,0 +1,108 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  max-width: 900px;
+  min-width: 500px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+/*nav bar*/
+nav {
+  margin: 30px 20px 10px 20px;
+  height: 50px;
+  min-width: 500px;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 21px;
+  padding: 40px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/*form*/
+.form1 {
+  border: 1px black solid;
+  width: 800px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.general {
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+label,
+#contact {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 15px;
+}
+
+input,
+select {
+  margin: 7px;
+  padding: 5px;
+}
+
+select {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px 31px;
+  margin-bottom: 15px;
+}
+
+select:hover {
+  background-color: #eeedec;
+}
+
+.checkLabel {
+  text-decoration: none;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  padding: 20px;
+}
+
+#textarea,
+#type {
+  float: right;
+  padding: 20px 10px;
+}
+
+/* textarea,
+input {
+   background-color: #F6F6F6;
+} */
+
+.submission {
+  height: 70px;
+}
+
+.submission input {
+  padding: 10px 75px;
+  text-align: center;
+  font-size: 17px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 20px 30px;
+}
+
+.submission input:hover {
+  margin-top: 21px;
+  background-color: #eeedec;
+}
