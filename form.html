@@ -14,7 +14,7 @@
 
   <body>
     <header id="header">
-      <nav class="container-top-bottom">
+      <nav class="nav container-top">
         <div class="logo"></div>
         <div class="nav">
           <ul>
@@ -25,54 +25,52 @@
         </div>
       </nav>
     </header>
+    <main class="form-page">
+      <form class="form1" action=" " method=" ">
+        <section class="upper">
+          <section class="textarea">
+            <label for="type">Describe the problem:</label>
+            <br />
+            <textarea id="type" name="type" rows="8" cols="45"></textarea>
+          </section>
 
-    <div class="form1 container">
-      <form action=" " method=" ">
-        <!-- <h3>Personal Details</h3> -->
+          <section class="question">
+            <label for="name">*Full Name: </label>
+            <br />
+            <input type="text" name="name" id="name" required />
+            <br />
 
-        <section id="textarea">
-          <label for="type">Describe the problem:</label>
-          <br />
-          <textarea id="type" name="type" rows="14" cols="70"></textarea>
-          <br />
+            <label for="house">*House number: </label>
+            <br />
+            <input type="text" name="house" id="house" required />
+            <br />
+
+            <label for="phoneNumber">Phone: </label>
+            <br />
+            <input type="text" name="phoneNumber" id="phoneNumber" />
+            <br />
+
+            <label for="emAdress">Email: </label>
+            <br />
+            <input type="text" name="emAdress" id="emAdress" />
+            <br />
+
+            <label for="issue">*Choose the issue topic: </label>
+            <br />
+            <select name="issue" id="issue" required>
+              <option value="construstion">Construstion</option>
+              <option value="housing">Housing</option>
+              <option value="rubbish">Rubbish</option>
+              <option value="road">Road</option>
+              <option value="administration">Administration</option>
+              <option value="complaint">Complaint</option>
+            </select>
+          </section>
         </section>
 
-        <section class="general">
-          <label for="name">*Full Name: </label>
-          <br />
-          <input type="text" name="name" id="name" required />
-          <br />
-
-          <label for="house">*House number: </label>
-          <br />
-          <input type="text" name="house" id="house" required />
-          <br />
-
-          <!-- <h3>Contact details:</h3> -->
-          <label for="phoneNumber">Phone: </label>
-          <br />
-          <input type="text" name="phoneNumber" id="phoneNumber" />
-          <br />
-
-          <label for="emAdress">Email: </label>
-          <br />
-          <input type="text" name="emAdress" id="emAdress" />
-          <br />
-
-          <label for="issue">*Choose the issue topic: </label>
-          <br />
-          <select name="issue" id="issue" required>
-            <option value="construstion">Construstion</option>
-            <option value="housing">Housing</option>
-            <option value="rubbish">Rubbish</option>
-            <option value="road">Road</option>
-            <option value="administration">Administration</option>
-            <option value="complaint">Complaint</option>
-          </select>
-        </section>
         <br />
 
-        <section class="questions">
+        <section class="lower">
           <span id="contact">How would you like to be contacted?</span>
           <br />
           <input type="checkbox" name="contact" id="phone" value="phone" />
@@ -112,12 +110,11 @@
           <input type="submit" value="Submit" />
         </section>
       </form>
-    </div>
+    </main>
 
-    <footer class="container-top-bottom">
-      <nav>
+    <footer class="container-bottom">
+      <nav class="nav">
         <ul>
-          <li class="nav-link"><a href="#">Sample</a></li>
           <li class="nav-link"><a href="#">Sample</a></li>
           <li class="nav-link"><a href="#">Sample</a></li>
           <li class="nav-link"><a href="#">Sample</a></li>
