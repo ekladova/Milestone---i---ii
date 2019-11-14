@@ -31,7 +31,7 @@ img {
   display: flex;
   width: 100%;
   justify-content: center;
-  background: #297373;
+  background: #807a81;
 }
 
 .nav-link {
@@ -51,7 +51,7 @@ footer {
 /*global containers*/
 
 .container-top {
-  background-color: #297373;
+  background-color: #807a81;
   position: fixed;
   z-index: 999;
 }
@@ -59,6 +59,10 @@ footer {
 .page {
   max-width: 840px;
   min-width: 600px;
+}
+
+.form-page,
+.index {
   position: relative;
   top: 66px;
 }
@@ -68,7 +72,7 @@ footer {
 
 .box {
   width: 50%;
-  height: 35vh;
+  height: 55vw;
   max-width: 715px;
   margin: auto;
   position: relative;
@@ -91,31 +95,20 @@ footer {
   float: left;
 }
 
-hr {
-  border-top: 2px #0d1f2d solid;
-}
-
 /* heading */
 .heading {
-  height: 320px;
+  min-height: 220px;
+  max-height: 300px;
   width: 100%;
 }
 
 .heading h2 {
-  font-size: 6.5vw;
+  font-size: 11vw;
   position: relative;
   display: inline-block;
   width: 60vw;
-  bottom: 35vw;
+  bottom: 55vw;
   text-align: right;
-}
-
-.text-decor {
-  font-size: 7vw;
-  margin: 0 0 20px 20px;
-  line-height: 1.2;
-  position: relative;
-  top: 0.5vw;
 }
 
 /* main content */
@@ -131,8 +124,6 @@ hr {
 }
 
 .scroll {
-  margin: 40px 0;
-  width: 100%;
   justify-content: flex-start;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -140,9 +131,10 @@ hr {
 }
 
 .smaller-box {
-  width: 200px;
+  width: 250px;
+  min-height: 27vw;
   margin: 50px 20px;
-  padding: 15px;
+  padding: 0.7rem;
   text-align: center;
   justify-content: center;
   align-content: center;
@@ -160,14 +152,19 @@ hr {
 }
 
 .border-box {
-  border: 5px #08415c solid;
+  border: 5px #807a81 solid;
 }
 
-.smaller-box img {
+.image-box {
+  min-width: 300px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+}
+
+.image-box img {
+  height: 25vw;
+  max-height: 100%;
 }
 
 /*form*/
@@ -178,8 +175,8 @@ hr {
 }
 
 #type {
-  width: 45vw;
-  margin: 1em 0 1em 10em;
+  width: 55vw;
+  margin: 1em 0 1em 5em;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -250,6 +247,11 @@ select:hover {
 @media only screen and (max-width: 600px) and (min-width: 200px) {
   .nav {
     min-width: 200px;
+    width: 100%;
+  }
+
+  .container-bottom {
+    display: none;
   }
 
   .nav-link {
@@ -263,14 +265,14 @@ select:hover {
   }
 
   .box {
-    height: 45vh;
     max-width: 715px;
+    min-height: 80vw;
   }
 
   .heading h2 {
-    font-size: 15vw;
-    width: 60vw;
-    bottom: 48vmax;
+    font-size: 14vw;
+    width: 64vw;
+    bottom: 78vmin;
   }
 
   .text-decor {
@@ -294,12 +296,11 @@ select:hover {
     align-content: center;
     align-items: center;
     justify-content: center;
-    min-height: 25vh;
+    min-height: 33vh;
   }
 
   img {
-    max-width: 100%;
-    max-height: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -346,7 +347,7 @@ select:hover {
   }
 
   .heading h2 {
-    font-size: 7.5vh;
+    font-size: 9vh;
     width: 60vw;
     bottom: 45vh;
   }
@@ -357,8 +358,8 @@ select:hover {
   }
 
   .smaller-box {
-    min-width: 27vw;
-
+    min-width: 20vw;
+    max-height: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,7 +373,7 @@ select:hover {
   /*    form*/
 
   #type {
-    width: 55vmin;
+    min-width: 65vmin;
   }
   .textarea {
     display: flex;
@@ -412,5 +413,29 @@ select:hover {
   .large-screen {
     min-height: 20vw;
     justify-content: center;
+  }
+
+  .box {
+    min-width: 50%;
+  }
+
+  .page {
+    min-width: 1100px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .nav-link,
+  main {
+    font-size: 2rem;
+  }
+
+  .heading h2 {
+    width: 60%;
+    text-align: end;
+  }
+
+  #type {
+    min-width: 60vw;
   }
 }
